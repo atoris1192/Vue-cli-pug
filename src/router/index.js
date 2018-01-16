@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import HelloWorld from '@/components/HelloWorld'
+import HelloWorld from '@/components/HelloWorld'
 import page1 from '@/components/page1'
 import page2 from '@/components/page2'
 // import page1 from '../components/page1'
@@ -21,6 +21,11 @@ export default new Router({
       path: '/page2',
       name: 'page2',
       component: page2
+    },
+    {
+      path: '/helloworld',
+      name: 'HelloWorld',
+      component: HelloWorld
     }
   ]
 })

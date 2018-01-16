@@ -30,6 +30,5 @@ module.exports = {
       '$': false,
       'jQuery': false
     }
-
   }
 }
