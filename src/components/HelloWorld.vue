@@ -1,15 +1,26 @@
 <template>
   <div class="hello">
+    <myheader></myheader>
+    <myheader></myheader>
     <p>サンプル</p>
+    <p v-if="msg.length > 0">{{ msg }}</p>
+    <p v-else>no massage!</p>
+    <input v-model="msg"/>
+    <button @click="clear()">clear!</button>
   </div>
 </template>
 
 <script>
+import myheader from './myheader'
+
 export default {
   name: 'HelloWorld',
+  components: {
+    myheader
+  },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome'
     }
   }
 }
