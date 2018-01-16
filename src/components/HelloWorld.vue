@@ -7,6 +7,7 @@
     <p v-else>no massage!</p>
     <input v-model="msg"/>
     <button @click="clear()">clear!</button>
+    <router-link to="/page2">go to page2</router-link>
   </div>
 </template>
 
